@@ -32,4 +32,17 @@ raw_hex = signed.raw_transaction.hex()
 items = [
     signal_text,
     volume_text,
-    layer_t
+    layer_text,
+]
+
+print("Timestamp:", int(time()))
+
+for item in items:
+    print(item)
+
+print("Address:", wallet.address)
+
+print("Connected:", web3.is_connected())
+
+print("Signature length:", len(raw_hex))
+```
